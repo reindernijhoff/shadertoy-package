@@ -1,0 +1,75 @@
+{
+  "name": "shadertoy",
+  "version": "0.0.1",
+  "description": "Render Shadertoy shaders using WebGL",
+  "keywords": [
+    "shadertoy",
+    "webgl",
+    "glsl",
+    "shader",
+    "fragment shader",
+    "graphics",
+    "creative coding",
+    "generative art"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/reindernijhoff/shadertoy-package.git"
+  },
+  "author": "Reinder Nijhoff <reinder@infi.nl>",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "main": "./dist/shadertoy.umd.cjs",
+  "module": "./dist/shadertoy.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/shadertoy.js",
+      "require": "./dist/shadertoy.umd.cjs"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.umd.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "clean": "shx rm -rf dist node_modules/.cache/.tsbuildinfo",
+    "prepare-publish": "tsx ./scripts/preparePublish.ts"
+  },
+  "dependencies": {
+    "@mediamonks/image-effect-renderer": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/shelljs": "^0.8.15",
+    "react": "^18.3.1",
+    "shelljs": "^0.10.0",
+    "shx": "^0.4.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.0.0",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
