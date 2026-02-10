@@ -2,6 +2,12 @@
 
 A TypeScript/JavaScript library for rendering [Shadertoy](https://www.shadertoy.com/) shaders using WebGL. Built on top of [@mediamonks/image-effect-renderer](https://www.npmjs.com/package/@mediamonks/image-effect-renderer).
 
+## Demo
+
+- [Shadertoy Shaders by Reinder Nijhoff](https://reindernijhoff.github.io/shadertoy-package/).
+
+This is a build from the repository's example/ directory.
+
 ## Features
 
 - Render Shadertoy shaders with full buffer support
