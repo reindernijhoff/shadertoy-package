@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
-import { ShadertoyRendererComponent } from '@reindernijhoff/shadertoy/react';
-import type { ShadertoyShader, ShadertoyExport } from '@reindernijhoff/shadertoy/react';
+import { ShadertoyRendererComponent } from '../../../src/react';
+import type { ShadertoyShader, ShadertoyExport } from '../../../src/react';
 import shadersData from '../shaders_public.json';
 import mediaMap from '../media/mediaMap.json';
 

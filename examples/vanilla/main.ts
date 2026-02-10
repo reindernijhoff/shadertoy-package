@@ -1,5 +1,5 @@
-import { ShadertoyRenderer } from '@reindernijhoff/shadertoy';
-import type { ShadertoyShader, ShadertoyExport } from '@reindernijhoff/shadertoy';
+import { ShadertoyRenderer } from '../../src/index';
+import type { ShadertoyShader, ShadertoyExport } from '../../src/index';
 import shadersData from './shaders_public.json';
 import mediaMap from './media/mediaMap.json';
 

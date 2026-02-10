@@ -18,17 +18,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install root dependencies
-        run: npm ci
-
-      - name: Build library
-        run: npm run build
-
-      - name: Install example dependencies
+      - name: Install npm packages
         run: npm ci
         working-directory: ./examples/vanilla
 
-      - name: Build example
+      - name: Build
         run: npm run build
         working-directory: ./examples/vanilla
 
