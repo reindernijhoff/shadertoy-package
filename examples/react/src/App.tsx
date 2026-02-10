@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ShadertoyRendererComponent } from '../../../src/react';
 import type { ShadertoyShader, ShadertoyExport } from '../../../src/react';
 import shadersData from '../shaders_public.json';
-import mediaMap from '../media/mediaMap.json';
+import mediaMap from '../mediaMap.json';
 
 const shaders = (shadersData as ShadertoyExport).shaders;
 

@@ -1,7 +1,7 @@
 import { ShadertoyRenderer } from '../../src/index';
 import type { ShadertoyShader, ShadertoyExport } from '../../src/index';
 import shadersData from './shaders_public.json';
-import mediaMap from './media/mediaMap.json';
+import mediaMap from './mediaMap.json';
 
 const shaders = (shadersData as ShadertoyExport).shaders;
 
