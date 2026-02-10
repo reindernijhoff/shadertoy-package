@@ -4,7 +4,7 @@ A TypeScript/JavaScript library for rendering [Shadertoy](https://www.shadertoy.
 
 ## Demo
 
-Shadertoy Shaders by Reinder Nijhoff rendered using [this library](https://reindernijhoff.github.io/shadertoy-package/).
+[Shadertoy Shaders by Reinder Nijhoff rendered using this library](https://reindernijhoff.github.io/shadertoy-package/).
 
 This is a build from the repository's example/ directory.
 
