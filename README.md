@@ -19,7 +19,7 @@ This is a build from the repository's example/ directory.
 ## Installation
 
 ```bash
-npm install shadertoy
+npm install @reindernijhoff/shadertoy
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ npm install shadertoy
 ### Vanilla JavaScript
 
 ```javascript
-import { ShadertoyRenderer } from 'shadertoy';
+import { ShadertoyRenderer } from '@reindernijhoff/shadertoy';
 import shader from './shader.json';
 
 const container = document.getElementById('container');
@@ -49,7 +49,7 @@ renderer.destruct();
 ### React
 
 ```tsx
-import { ShadertoyRendererComponent } from 'shadertoy/react';
+import { ShadertoyRendererComponent } from '@reindernijhoff/shadertoy/react';
 import shader from './shader.json';
 
 function App() {
@@ -67,7 +67,7 @@ function App() {
 Or use the hook for more control:
 
 ```tsx
-import { useShadertoyRenderer } from 'shadertoy/react';
+import { useShadertoyRenderer } from '@reindernijhoff/shadertoy/react';
 
 function App() {
   const { ref, renderer, isReady } = useShadertoyRenderer({

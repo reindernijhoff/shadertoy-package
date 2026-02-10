@@ -1,5 +1,5 @@
-import { ShadertoyRenderer } from '../../src/index.js';
-import type { ShadertoyShader, ShadertoyExport } from '../../src/index.js';
+import { ShadertoyRenderer } from '@reindernijhoff/shadertoy';
+import type { ShadertoyShader, ShadertoyExport } from '@reindernijhoff/shadertoy';
 import shadersData from './shaders_public.json';
 import mediaMap from './media/mediaMap.json';
 

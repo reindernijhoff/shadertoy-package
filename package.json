@@ -1,5 +1,5 @@
 {
-  "name": "shadertoy",
+  "name": "@reindernijhoff/shadertoy",
   "version": "0.0.1",
   "description": "Render Shadertoy shaders using WebGL",
   "keywords": [
