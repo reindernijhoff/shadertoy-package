@@ -1,7 +1,5 @@
 # Shadertoy
 
-[![npm version](https://badge.fury.io/js/%40reindernijhoff%2Fshadertoy.svg)](https://www.npmjs.com/package/@reindernijhoff/shadertoy)
-
 A TypeScript/JavaScript library for rendering [Shadertoy](https://www.shadertoy.com/) shaders using WebGL. Built on top of [@mediamonks/image-effect-renderer](https://www.npmjs.com/package/@mediamonks/image-effect-renderer).
 
 ## Demo
