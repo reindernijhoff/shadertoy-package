@@ -81,6 +81,25 @@
     .shader-info a:hover {
       text-decoration: underline;
     }
+
+    #shader-footer {
+      margin-top: 24px;
+      padding: 12px 20px;
+      font-size: 0.8rem;
+      color: #555;
+      letter-spacing: 0.02em;
+    }
+
+    #shader-footer a {
+      color: #7b8cff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    #shader-footer a:hover {
+      color: #aab4ff;
+    }
   </style>
 </head>
 <body>
@@ -92,6 +111,9 @@
   </div>
   <div id="canvas-container"></div>
   <div id="shader-info" class="shader-info"></div>
+  <footer id="shader-footer">
+    Powered by <a href="https://www.npmjs.com/package/@reindernijhoff/shadertoy" target="_blank">@reindernijhoff/shadertoy</a>
+  </footer>
   <script type="module" src="/main.ts"></script>
 </body>
 </html>

@@ -77,3 +77,22 @@ select:focus {
 .shader-info a:hover {
   text-decoration: underline;
 }
+
+#shader-footer {
+  margin-top: 24px;
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+#shader-footer a {
+  color: #7b8cff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+#shader-footer a:hover {
+  color: #aab4ff;
+}

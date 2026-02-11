@@ -58,6 +58,9 @@ function App() {
           </a>
         </div>
       )}
+      <footer id="shader-footer">
+        Powered by <a href="https://www.npmjs.com/package/@reindernijhoff/shadertoy" target="_blank">@reindernijhoff/shadertoy</a>
+      </footer>
     </div>
   );
 }
