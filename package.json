@@ -23,19 +23,17 @@
     "dist/**/*",
     "README.md"
   ],
-  "main": "./dist/shadertoy.umd.cjs",
+  "main": "./dist/shadertoy.js",
   "module": "./dist/shadertoy.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/shadertoy.js",
-      "require": "./dist/shadertoy.umd.cjs"
+      "import": "./dist/shadertoy.js"
     },
     "./react": {
       "types": "./dist/react/index.d.ts",
-      "import": "./dist/react.js",
-      "require": "./dist/react.umd.cjs"
+      "import": "./dist/react.js"
     }
   },
   "publishConfig": {
@@ -44,11 +42,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "clean": "shx rm -rf dist node_modules/.cache/.tsbuildinfo",
     "prepare-publish": "tsx ./scripts/preparePublish.ts"
   },
   "dependencies": {
-    "@mediamonks/image-effect-renderer": "^4.0.2"
+    "@mediamonks/image-effect-renderer": "^4.1.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.13",
@@ -58,8 +57,8 @@
     "shx": "^0.4.0",
     "tsx": "^4.7.1",
     "typescript": "^5.9.3",
-    "vite": "^7.0.0",
-    "vite-plugin-dts": "^4.5.4"
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"

@@ -20,16 +20,17 @@ export default defineConfig({
                 shadertoy: resolve(__dirname, 'src/index.ts'),
                 react: resolve(__dirname, 'src/react/index.ts'),
             },
+            formats: ['es'],
         },
         rollupOptions: {
-            external: ['react', 'react-dom', 'react/jsx-runtime'],
-            output: {
-                globals: {
-                    react: 'React',
-                    'react-dom': 'ReactDOM',
-                    'react/jsx-runtime': 'jsxRuntime',
-                },
-            },
+            // Externalize every react / react-dom subpath (incl. react/jsx-runtime) AND the
+            // runtime dependency @mediamonks/image-effect-renderer. A library must never bundle
+            // its own dependencies or React's runtime.
+            external: [
+                /^react($|\/)/,
+                /^react-dom($|\/)/,
+                /^@mediamonks\/image-effect-renderer($|\/)/,
+            ],
         },
     }
 })
