@@ -8,7 +8,11 @@ export interface UseShadertoyRendererOptions extends ShadertoyRendererOptions {
 }
 
 export interface UseShadertoyRendererReturn {
-  ref: React.RefObject<HTMLDivElement>;
+  // Portable ref-object shape instead of React.RefObject<…>: React 19 changed RefObject
+  // (`current: T`) vs React 16–18 (`readonly current: T | null`), so a version-specific
+  // RefObject annotation fails to assign to a DOM `ref` prop / the hook's own return on one
+  // major or the other. This plain shape attaches cleanly as a `ref` across React 16.8–19.
+  ref: {current: HTMLDivElement | null};
   renderer: ShadertoyRenderer | null;
   isReady: boolean;
 }
